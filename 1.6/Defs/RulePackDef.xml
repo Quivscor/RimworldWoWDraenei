@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>Quivscor_Draenei_Namer</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>DeityNames->Eredar/DeityNames</li>
+        <li>MaleNames->Eredar/MaleNames</li>
+        <li>FemaleNames->Eredar/FemaleNames</li>
+        <li>LastNames->Eredar/LastNames</li>
+        <li>CityNames->Eredar/CityNames</li>
+        <li>FactionNames->Eredar/FactionNames</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Quivscor_Draenei_NamerDeity</defName>
+    <include>
+      <li>Quivscor_Draenei_Namer</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName->[DeityNames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Quivscor_DraeneiDeityTypeMaker</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->Embodiment of Good</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Quivscor_DraeneiLeaderTitleMaker</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->High Exarch</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Quivscor_Draenei_NamerFaction</defName>
+    <include>
+      <li>Quivscor_Draenei_Namer</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FactionNames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Quivscor_Draenei_NamerSettlement</defName>
+    <include>
+      <li>Quivscor_Draenei_Namer</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[CityNames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Quivscor_Draenei_NamerMale</defName>
+    <include>
+      <li>Quivscor_Draenei_Namer</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[MaleNames] [LastNames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Quivscor_Draenei_NamerFemale</defName>
+    <include>
+      <li>Quivscor_Draenei_Namer</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FemaleNames] [LastNames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

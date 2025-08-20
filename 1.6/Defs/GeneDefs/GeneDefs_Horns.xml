@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<GeneDef ParentName="GeneHeadboneBase">
+    <defName>Quivscor_Draenei_Horns_Male</defName>
+    <label>draenei crest</label>
+    <description>Male carriers of this gene grow a crest on their forehead. This limits their possible hairstyles because of the protrusion on their forehead.</description>
+    <iconPath>UI/Icons/Genes/Gene_DraeneiFacePlate</iconPath>
+    <geneClass>VEF.Genes.GeneGendered</geneClass>
+    <modExtensions>
+			<li Class="VEF.Genes.GeneExtension">				
+				<forGenderOnly>Male</forGenderOnly>
+			</li>
+		</modExtensions>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiHorns/DraeneiHorns-1-male</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiHorns/DraeneiHorns-2-male</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiHorns/DraeneiHorns-3-male</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiHorns/DraeneiHorns-4-male</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiHorns/DraeneiHorns-5-male</li>
+        </texPaths>        
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>65</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Shaved</li>
+			</tags>
+		</hairTagFilter>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>horn</symbol></li>
+        <li><symbol>goat</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>horn</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHeadboneBase">
+    <defName>Quivscor_Draenei_Horns_Female</defName>
+    <label>draenei horns</label>
+    <description>Female carriers of this gene grow two goat-like horns protruding from the forehead.</description>
+    <iconPath>UI/Icons/Genes/Gene_DraeneiHorns</iconPath>
+    <geneClass>VEF.Genes.GeneGendered</geneClass>
+    <modExtensions>
+			<li Class="VEF.Genes.GeneExtension">				
+				<forGenderOnly>Female</forGenderOnly>
+			</li>
+		</modExtensions>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiHorns/DraeneiHorns-1-female</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiHorns/DraeneiHorns-2-female</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiHorns/DraeneiHorns-3-female</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiHorns/DraeneiHorns-4-female</li>
+        </texPaths>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>horn</symbol></li>
+        <li><symbol>goat</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>horn</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+</Defs>

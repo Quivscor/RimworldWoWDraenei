@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>Quivscor_Argunite</defName>
+        <label>argunite</label>
+        <description>Rumored to be crystalized blood of a dead archotech, Argunite is a precious material that possesses psyfocus enhancing abilities, often used in jewelery, however some xenotypes were able to develop crude but operational devices using argunite as their source of power.</description>
+        <graphicData>
+            <texPath>Resources/Argunite</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.1</drawSize>
+        </graphicData>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>11</MarketValue>
+            <Mass>0.01</Mass>
+            <Beauty>5</Beauty>
+            <Flammability>0.0</Flammability>
+            <DeteriorationRate>0.0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+    </ThingDef>
+
+</Defs>

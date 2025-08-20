@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <WorkGiverDef>
+        <defName>Quivscor_MeteorCatcher</defName>
+        <label>operate argunite astral extractor</label>
+        <giverClass>WorkGiver_OperateScanner</giverClass> <!-- to change -->
+        <workType>Research</workType>
+        <priorityInType>50</priorityInType>
+        <verb>operate</verb>
+        <gerund>operating</gerund>
+        <scannerDef>Quivscor_ArguniteAstralExtractor</scannerDef> <!-- to change -->
+        <requiredCapacities>
+        <li>Manipulation</li>
+        </requiredCapacities>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+    </WorkGiverDef>
+
+</Defs>

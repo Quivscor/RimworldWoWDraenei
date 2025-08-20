@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FacialAnimation.EyeballColorDef>
+    <defName>Eyes_Draenei_EyeColor</defName>
+    <geneDef>Quivscor_Draenei_Eyes</geneDef>
+    <eyeballColor>RGB(222,229,245)</eyeballColor>  
+  </FacialAnimation.EyeballColorDef>
+
+</Defs>

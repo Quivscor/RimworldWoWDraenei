@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>Quivscor_Draenei_Hammer</defName>
+        <label>argunite hammer</label>
+        <description>A warhammer made out of giant chunk of argunite.</description>
+        <recipeMaker>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>600</displayPriority>
+        </recipeMaker>
+        <costList>
+			    <Steel>80</Steel>
+          <Uranium>20</Uranium>
+			    <Quivscor_Argunite>65</Quivscor_Argunite>
+		    </costList>
+        <possessionCount>1</possessionCount>
+        <!-- <costStuffCount>65</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories> -->
+        <statBases>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.25</Mass>
+        </statBases>
+        <soundInteract>Interact_ZeusHammer</soundInteract>
+        <meleeHitSound>MeleeHit_ZeusHammer</meleeHitSound>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+          <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>
+          <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+        </equippedStatOffsets>
+        <relicChance>3</relicChance>
+        <smeltable>true</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <weaponTags>
+            <li>WeaponsMelee</li>
+        </weaponTags>
+        <tradeTags>
+            <li>WeaponMelee</li>
+        </tradeTags>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+        </weaponClasses>
+        <thingSetMakerTags>
+            <li>RewardStandardMidFreq</li>
+        </thingSetMakerTags>
+        <graphicData>
+            <texPath>Things/Equipment/Quivscor_Draenei_Hammer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <tools>
+        <li>
+            <label>handle</label>
+            <capacities>
+                <li>Poke</li>
+            </capacities>
+            <power>11.5</power>
+            <cooldownTime>2</cooldownTime>
+            <armorPenetration>0.3</armorPenetration>
+        </li>
+        <li>
+            <label>head</label>
+            <labelUsedInLogging>false</labelUsedInLogging>
+            <capacities>
+                <li>Blunt</li>
+            </capacities>
+            <power>27</power>
+            <cooldownTime>3</cooldownTime>
+            <armorPenetration>0.5</armorPenetration>
+        </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="ArmorSmithableBase">
+    <defName>Quivscor_Draenei_PlateArmor</defName>
+    <label>argunite armor</label>
+    <description>Armor of the Eredar Vindicators, stuffed with argunite crystals.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/DraeneiPaladin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>220</costStuffCount>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.35</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+      <EquipDelay>17</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.45</MoveSpeed>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.45</VacuumResistance>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/DraeneiPaladin</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+        <options>
+          <li>
+            <weight>10</weight>
+            <only>(0.9,0.9,0.9)</only>
+          </li>
+          <li>
+            <weight>10</weight>
+            <only>(0.33,0.33,0.33)</only>
+          </li>
+          <li>
+            <weight>10</weight>
+            <only>(0.65,0.65,0.65)</only>
+          </li>
+          <li>
+            <weight>6</weight>
+            <min>(0.3,0.3,0.3)</min>
+            <max>(0.5,0.5,0.5)</max>
+          </li>
+        </options>
+      </colorGenerator>
+  </ThingDef>
+
+  <!-- <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Quivscor_Draenei_NaaruMark</defName>
+    <techLevel>Medieval</techLevel>
+    <label>naaru mark</label>
+    <description>Blessing bestowed by the Naaru.</description>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/NaaruMark/NaaruMark</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>26250</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>6</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.34</VacuumResistance>
+    </equippedStatOffsets>
+    <costList>
+      <Quivscor_Argunite>10</Quivscor_Argunite>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/NaaruMark/NaaruMark</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+       <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.1,0.1,1,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,1,0.65,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef> -->
+</Defs>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- RESOURCES -->
+
+<ThingDef ParentName="RockBase">
+    <defName>Quivscor_MineableArgunite</defName>
+    <label>argunite ore</label>
+    <description>Rock containing bits of argunite crystals.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(97,68,156)</color>
+      <colorTwo>(43,31,84)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>4000</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Quivscor_Argunite</mineableThing>
+      <mineableYield>12</mineableYield>
+      <mineableScatterCommonality>0.01</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+
+<!-- TECH -->
+
+<ThingDef ParentName="BuildingBase">
+    <defName>Quivscor_ArguniteAstralExtractor</defName>
+    <label>argunite astral extractor</label>
+    <description>A powerful scanning and extraction device, able to locate and attract meteors from planet's orbit. Will cause random skyfaller event when finished, prioritizing resource meteors.</description>
+    <graphicData>
+      <texPath>Things/Building/AstralExtractor/AstralExtractor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <costList>
+      <Steel>150</Steel>
+      <Gold>50</Gold>
+      <Quivscor_Argunite>20</Quivscor_Argunite>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="QuivscorWowDraenei.CompProperties_AstralExtractor">
+        <scanSpeedStat>ResearchSpeed</scanSpeedStat>
+        <scanFindMtbDays>5</scanFindMtbDays>
+        <scanFindGuaranteedDays>8</scanFindGuaranteedDays>
+        <soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
+        <spawnedIncident>MeteoriteImpact</spawnedIncident>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(43,31,84,0)</glowColor>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>8</Beauty>
+    </statBases>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,2)</interactionCellOffset>
+    <fillPercent>0.40</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <designationCategory>Misc</designationCategory>
+    <rotatable>true</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <size>(2,2)</size>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <researchPrerequisites>
+      <li>GroundPenetratingScanner</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+
+</Defs>

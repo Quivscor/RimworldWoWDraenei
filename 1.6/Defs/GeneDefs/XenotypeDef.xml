@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef Name="Quivscor_DraeneiAbstract" Abstract="true">
+    <iconPath>UI/Icons/DraeneiIcon</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Quivscor_Draenei_Tail</li>
+      <li>Quivscor_Draenei_Legs</li>
+      <li>Quivscor_Draenei_TendrilsMale</li>
+      <li>Quivscor_Draenei_TendrilsFemale</li>
+      <li>Quivscor_Draenei_Horns_Male</li>
+      <li>Quivscor_Draenei_Horns_Female</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef ParentName="Quivscor_DraeneiAbstract" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Quivscor_Eredar</defName>
+    <label>eredar</label>
+    <description>Driven from their distant home world, the Eredar still exist thanks to their ingeniuity. Despite their medieval society, having access to psy-inducing material known as Argunite has allowed them to develop machinery on par with the modern inventions of the spacer era.\n\nThe Eredar appear quite alien to normal humans. Their pupil-less white glowing eyes, facial tendrils and horns make social interactions between the rest of the galaxy quite difficult. They do not possess any specific genetic specialty besides higher motor functions thanks to the unguligrade legs.</description>
+
+    <descriptionShort>Group of xenohumans developed on a distant world that has been destroyed by forces of evil millennia ago. Eredars are known for their psy-imbued argunite machinery.</descriptionShort>
+    <nameMaker>Quivscor_Draenei_NamerMale</nameMaker>
+    <nameMakerFemale>Quivscor_Draenei_NamerFemale</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <genes>
+      <li>Quivscor_Draenei_Eyes</li>
+      <li>Skin_LightGray</li>
+      <li>Skin_SheerWhite</li>
+      <li>Quivscor_Skin_LightBlue</li>
+      <li>Quivscor_Skin_SkyBlue</li>
+      <li>Quivscor_Skin_DraeneiAsh</li>
+      <li>Quivscor_Skin_DraeneiPurple</li>
+      <li>Quivscor_Skin_Ivory</li>
+      <li>Quivscor_Skin_Violet</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs> 

@@ -1,0 +1,44 @@
+<Defs>
+
+    <PawnKindDef Name="Quivscor_Eredar_Base" Abstract="true">
+        <race>Human</race>
+        <minGenerationAge>2</minGenerationAge>
+        <maxGenerationAge>80</maxGenerationAge>
+        <defaultFactionType>Quivscor_EredarBaseFaction</defaultFactionType>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <biocodeWeaponChance>0</biocodeWeaponChance>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <invNutrition>3</invNutrition>
+        <invFoodDef>Pemmican</invFoodDef>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>1~1</gearHealthRange>
+        <techHediffsMoney>0~1</techHediffsMoney>
+        <techHediffsTags></techHediffsTags>
+        <disallowedTraits>
+            <li>Wimp</li>
+            <li>Nudist</li>
+        </disallowedTraits>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>Tribal</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>TribalHunter</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <DevDesigner_XenotypeDarkElves MayRequire="Ludeon.RimWorld.Biotech">100</DevDesigner_XenotypeDarkElves>
+            </xenotypeChances>
+        </xenotypeSet>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+  </PawnKindDef>
+
+</Defs>

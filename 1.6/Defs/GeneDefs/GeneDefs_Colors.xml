@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Quivscor_Skin_LightBlue</defName>
+        <label>light blue skin</label>
+        <labelShortAdj>light blue</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that gives their skin a light blue color.</description>
+        <skinColorOverride>(122, 143, 164)</skinColorOverride>
+        <displayOrderInCategory>85</displayOrderInCategory>
+        <!-- <symbolPack>
+        <prefixSymbols>
+            <li><symbol>purp</symbol></li>
+            <li><symbol>grape</symbol></li>
+        </prefixSymbols>
+        </symbolPack> -->
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Quivscor_Skin_SkyBlue</defName>
+        <label>sky blue skin</label>
+        <labelShortAdj>sky blue</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that gives their skin a sky blue color.</description>
+        <skinColorOverride>(93, 100, 129)</skinColorOverride>
+        <displayOrderInCategory>85</displayOrderInCategory>
+        <!-- <symbolPack>
+        <prefixSymbols>
+            <li><symbol>purp</symbol></li>
+            <li><symbol>grape</symbol></li>
+        </prefixSymbols>
+        </symbolPack> -->
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Quivscor_Skin_DraeneiAsh</defName>
+        <label>draenei ash skin</label>
+        <labelShortAdj>draenei ash</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that gives their skin a draenei ash color.</description>
+        <skinColorOverride>(106, 124, 134)</skinColorOverride>
+        <displayOrderInCategory>85</displayOrderInCategory>
+        <!-- <symbolPack>
+        <prefixSymbols>
+            <li><symbol>purp</symbol></li>
+            <li><symbol>grape</symbol></li>
+        </prefixSymbols>
+        </symbolPack> -->
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Quivscor_Skin_DraeneiPurple</defName>
+        <label>draenei purple skin</label>
+        <labelShortAdj>draenei purple</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that gives their skin a draenei purple color.</description>
+        <skinColorOverride>(76, 73, 84)</skinColorOverride>
+        <displayOrderInCategory>85</displayOrderInCategory>
+        <!-- <symbolPack>
+        <prefixSymbols>
+            <li><symbol>purp</symbol></li>
+            <li><symbol>grape</symbol></li>
+        </prefixSymbols>
+        </symbolPack> -->
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Quivscor_Skin_Ivory</defName>
+        <label>ivory skin</label>
+        <labelShortAdj>ivory</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that gives their skin a ivory color.</description>
+        <skinColorOverride>(170, 181, 183)</skinColorOverride>
+        <displayOrderInCategory>85</displayOrderInCategory>
+        <!-- <symbolPack>
+        <prefixSymbols>
+            <li><symbol>purp</symbol></li>
+            <li><symbol>grape</symbol></li>
+        </prefixSymbols>
+        </symbolPack> -->
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Quivscor_Skin_Violet</defName>
+        <label>violet skin</label>
+        <labelShortAdj>violet</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that gives their skin a violet color.</description>
+        <skinColorOverride>(154, 152, 174)</skinColorOverride>
+        <displayOrderInCategory>85</displayOrderInCategory>
+        <!-- <symbolPack>
+        <prefixSymbols>
+            <li><symbol>purp</symbol></li>
+            <li><symbol>grape</symbol></li>
+        </prefixSymbols>
+        </symbolPack> -->
+    </GeneDef>
+</Defs>

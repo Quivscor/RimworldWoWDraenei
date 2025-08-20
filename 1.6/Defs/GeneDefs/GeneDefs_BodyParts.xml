@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<GeneDef ParentName="GeneTailBase">
+    <defName>Quivscor_Draenei_Tail</defName>
+    <label>draenei tail</label>
+    <description>Carriers of this gene grow a slender tail that can act as a dexterous fifth limb.</description>
+    <iconPath>UI/Icons/Genes/Gene_DraeneiTail</iconPath>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+    <renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/Quivscor_DraeneiTail/DraeneiTailMale</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/BodyAttachments/Quivscor_DraeneiTail/DraeneiTailFemale</texPathFemale>
+        <colorType>Skin</colorType>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0, -0.15)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0, 0, -0.15)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.54, 0, -0.1)</offset>
+            <layer>-3</layer>
+          </dataEast>
+          <dataWest>
+            <offset>(0.54, 0, -0.1)</offset>
+            <layer>-3</layer>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Quivscor_Draenei_TendrilsMale</defName>
+    <label>chin tendrils</label>
+    <description>Male carriers of this gene have tendrils sticking out of their chin.</description>
+    <iconPath>UI/Icons/Genes/Gene_DraeneiTendrils</iconPath>
+    <geneClass>VEF.Genes.GeneGendered</geneClass>
+    <modExtensions>
+			<li Class="VEF.Genes.GeneExtension">				
+				<forGenderOnly>Male</forGenderOnly>
+			</li>
+		</modExtensions>
+    <displayCategory>Cosmetic</displayCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>500</displayOrderInCategory>
+    <biostatCpx>0</biostatCpx>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiTendrils/DraeneiTendrils_male</texPath>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>51</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Quivscor_Draenei_TendrilsFemale</defName>
+    <label>back tendrils</label>
+    <description>Female carriers of this gene have tendrils sticking out from the back of their head.</description>
+    <iconPath>UI/Icons/Genes/Gene_DraeneiTendrils</iconPath>
+    <geneClass>VEF.Genes.GeneGendered</geneClass>
+    <modExtensions>
+			<li Class="VEF.Genes.GeneExtension">				
+				<forGenderOnly>Female</forGenderOnly>
+			</li>
+		</modExtensions>
+    <displayCategory>Cosmetic</displayCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>500</displayOrderInCategory>
+    <biostatCpx>0</biostatCpx>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiTendrils/DraeneiTendrils_female</texPath>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>49</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Quivscor_Draenei_Legs</defName>
+    <label>smooth unguligrade legs</label>
+    <description>Carriers of this gene have smooth, unguligrade legs ended with hooves.</description>
+    <iconPath>UI/Icons/Genes/Gene_DraeneiLegs</iconPath>
+    <displayCategory>Movement</displayCategory>
+    <displayOrderInCategory>100</displayOrderInCategory>
+    <statOffsets>
+      <MoveSpeed>0.15</MoveSpeed>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>Quivscor_Draenei_Eyes</defName>
+    <label>draenei eyes</label>
+    <labelShortAdj>blue-eyed</labelShortAdj>
+    <description>Carriers of this gene have glowing blue eyes.</description>
+    <iconPath>UI/Icons/Genes/Gene_DraeneiEyes</iconPath> <!--edit this path-->
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiEye/DraeneiEyes_male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiEye/DraeneiEyes_female</texPathFemale>
+        <anchorTag>RightEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Right</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiEye/DraeneiEyes_male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Quivscor_DraeneiEye/DraeneiEyes_female</texPathFemale>
+        <anchorTag>LeftEye</anchorTag>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>0.2</drawSize>
+        <side>Left</side>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.25)</offset>
+            <flip>true</flip>
+          </defaultData>
+          <dataWest>
+            <flip>false</flip>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+
+  </GeneDef>
+
+</Defs> 

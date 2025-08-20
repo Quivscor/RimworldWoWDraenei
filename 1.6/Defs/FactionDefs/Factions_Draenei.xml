@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FactionDef ParentName="FactionBase" Name="Quivscor_DraeneiFaction">
+        <defName>Quivscor_DraeneiFaction</defName>
+        <pawnSingular>exile</pawnSingular>
+        <pawnsPlural>exiled</pawnsPlural>
+        <categoryTag>Medieval</categoryTag>
+        <listOrderPriority>20</listOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        <canStageAttacks>true</canStageAttacks>
+        <factionIconPath>UI/Icons/DraeneiSettlement</factionIconPath>
+        <techLevel>Medieval</techLevel>
+        <factionNameMaker>Quivscor_Draenei_NamerFaction</factionNameMaker>
+        <settlementNameMaker>Quivscor_Draenei_NamerSettlement</settlementNameMaker>
+        <allowedCultures>
+            <li>Quivscor_DraeneiCulture</li>
+        </allowedCultures>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+        </disallowedMemes>
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+        </disallowedPrecepts>
+        <structureMemeWeights>
+            <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+        </structureMemeWeights>
+        <backstoryFilters>
+            <li>
+                <categories>
+                <li>Outlander</li>
+                </categories>
+                <commonality>0.5</commonality>
+            </li>
+            <li>
+                <categories>
+                <li>Tribal</li>
+                </categories>
+                <commonality>0.5</commonality>
+            </li>
+        </backstoryFilters>
+        <leaderTitle>high exarch</leaderTitle>
+        <caravanTraderKinds>
+            <li>Caravan_Neolithic_BulkGoods</li>
+            <li>Caravan_Neolithic_WarMerchant</li>
+            <li>Caravan_Neolithic_Slaver</li>
+            <li>Caravan_Neolithic_ShamanMerchant</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Neolithic_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Neolithic_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <raidCommonalityFromPointsCurve>
+        <points>
+            <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+        </points>
+        </raidCommonalityFromPointsCurve>
+        <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+        <maxPawnCostPerTotalPointsCurve>
+        <points>
+            <li>(0,35)</li>
+            <li>(70, 50)</li>
+            <li>(800, 100)</li>
+            <li>(1300, 150)</li>
+            <li>(100000, 10000)</li>
+        </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Quivscor_Eredar>999</Quivscor_Eredar>
+            </xenotypeChances>
+        </xenotypeSet>
+        <pawnGroupMakers>
+        <li>
+            <!-- Normal fights, ranged with melee mix-ins -->
+            <kindDef>Combat</kindDef>
+            <commonality>100</commonality>
+            <options>
+            <Tribal_Penitent>5</Tribal_Penitent>
+            <Tribal_Warrior>5</Tribal_Warrior>
+            <Tribal_Archer>10</Tribal_Archer>
+            <Tribal_Hunter>10</Tribal_Hunter>
+            <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+            <Tribal_Berserker>5</Tribal_Berserker>
+            <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
+            <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+            </options>
+        </li>
+        <li>
+            <!-- Normal fights, ranged only -->
+            <kindDef>Combat</kindDef>
+            <commonality>60</commonality>
+            <options>
+            <Tribal_Archer>10</Tribal_Archer>
+            <Tribal_Hunter>10</Tribal_Hunter>
+            <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+            <Tribal_ChiefRanged>5</Tribal_ChiefRanged>
+            </options>
+        </li>
+        <li>
+            <!-- Normal fights, melee only -->
+            <kindDef>Combat</kindDef>
+            <commonality>60</commonality>
+            <options>
+            <Tribal_Penitent>10</Tribal_Penitent>
+            <Tribal_Warrior>10</Tribal_Warrior>
+            <Tribal_Berserker>10</Tribal_Berserker>
+            <Tribal_ChiefMelee>5</Tribal_ChiefMelee>
+        </options>
+        </li>
+        <li>
+            <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+            <kindDef>Combat</kindDef>
+            <commonality>5</commonality>
+            <options>
+            <Tribal_Breacher>5</Tribal_Breacher>
+            <Tribal_Penitent>5</Tribal_Penitent>
+            <Tribal_Warrior>5</Tribal_Warrior>
+            <Tribal_Archer>10</Tribal_Archer>
+            <Tribal_Hunter>10</Tribal_Hunter>
+            <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+            <Tribal_Berserker>5</Tribal_Berserker>
+            <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
+            <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+        </options>
+        </li>
+        <li>
+            <!-- Peaceful -->
+            <kindDef>Peaceful</kindDef>
+            <options>
+            <Tribal_Warrior>20</Tribal_Warrior>
+            <Tribal_Child MayRequire="Ludeon.RimWorld.Biotech">10</Tribal_Child>
+            <Tribal_Archer>10</Tribal_Archer>
+            <Tribal_Hunter>10</Tribal_Hunter>
+            <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+            <Tribal_Berserker>5</Tribal_Berserker>
+            <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
+            <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+            </options>
+        </li>
+        <li>
+            <kindDef>Trader</kindDef>
+            <traders>
+            <Tribal_Trader>1</Tribal_Trader>
+            </traders>
+            <carriers>
+            <Muffalo>6</Muffalo>
+            <Dromedary>5</Dromedary>
+            <Alpaca>2.5</Alpaca>
+            <Elephant>2</Elephant>
+            </carriers>
+            <guards>
+            <Tribal_Warrior>7</Tribal_Warrior>
+            <Tribal_Archer>10</Tribal_Archer>
+            <Tribal_Hunter>10</Tribal_Hunter>
+            <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+            <Tribal_Berserker>7</Tribal_Berserker>
+            </guards>
+        </li>
+        <li>
+            <kindDef>Settlement</kindDef>
+            <options>
+            <Tribal_Warrior>7</Tribal_Warrior>
+            <Tribal_Archer>10</Tribal_Archer>
+            <Tribal_Hunter>10</Tribal_Hunter>
+            <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+            <Tribal_Berserker>7</Tribal_Berserker>
+            <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+            </options>
+        </li>
+        <li>
+            <kindDef>Settlement_RangedOnly</kindDef>
+            <options>
+            <Tribal_Archer>10</Tribal_Archer>
+            <Tribal_Hunter>10</Tribal_Hunter>
+            <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+            <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+            </options>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">
+            <kindDef>Miners</kindDef>
+            <commonality>1</commonality>
+            <options>
+            <Tribal_Miner>1</Tribal_Miner>
+            </options>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">
+            <kindDef>Hunters</kindDef>
+            <commonality>1</commonality>
+            <options>
+            <Tribal_Hunter>1</Tribal_Hunter>
+            </options>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">
+            <kindDef>Loggers</kindDef>
+            <commonality>1</commonality>
+            <options>
+            <Tribal_Logger>1</Tribal_Logger>
+            </options>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">
+            <kindDef>Farmers</kindDef>
+            <commonality>1</commonality>
+            <options>
+            <Tribal_Farmer>1</Tribal_Farmer>
+            </options>
+        </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+        <label>eredar settlement</label>
+        <description>These people have been here for a decent amount of time. Either they or their descendants still remember the day their kind crashlanded on this world. Ever since then they seem to prosper. The Eredar living here value friendly neighbours over unnecessary bloodshed. Their tech level barely exceeds that of a medieval era, except for few distinct arcane devices that can be seen here and there.</description>
+        <colorSpectrum>
+            <li>(0.85, 0.75, 0.37)</li>
+            <li>(0.94, 0.61, 0.06)</li>
+        </colorSpectrum>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>30</configurationListOrderPriority>
+    </FactionDef>
+</Defs>
