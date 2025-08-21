@@ -96,7 +96,10 @@
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
-    <costStuffCount>220</costStuffCount>
+    <costStuffCount>150</costStuffCount>
+    <costList>
+      <Quivscor_Argunite>70</Quivscor_Argunite>
+    </costList>
     <statBases>
       <WorkToMake>45000</WorkToMake>
       <MaxHitPoints>400</MaxHitPoints>

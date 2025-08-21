@@ -9,6 +9,7 @@
         <li>MaleNames->Eredar/MaleNames</li>
         <li>FemaleNames->Eredar/FemaleNames</li>
         <li>LastNames->Eredar/LastNames</li>
+        <li>Titles->Eredar/Titles</li>
         <li>CityNames->Eredar/CityNames</li>
         <li>FactionNames->Eredar/FactionNames</li>
       </rulesFiles>
@@ -76,7 +77,8 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>r_name->[MaleNames] [LastNames]</li>
+        <li>r_name(p=0.05)->[MaleNames] [LastNames]</li>
+        <li>r_name(p=0.95)->[MaleNames] the [Titles]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -88,7 +90,8 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>r_name->[FemaleNames] [LastNames]</li>
+        <li>r_name(p=0.05)->[FemaleNames] [LastNames]</li>
+        <li>r_name(p=0.95)->[FemaleNames] the [Titles]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
