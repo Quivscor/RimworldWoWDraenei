@@ -53,7 +53,7 @@
         <scanSpeedStat>ResearchSpeed</scanSpeedStat>
         <scanFindMtbDays>5</scanFindMtbDays>
         <scanFindGuaranteedDays>8</scanFindGuaranteedDays>
-        <soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
+        <soundWorking>ArguniteAstralExtractor_Ambience</soundWorking>
         <spawnedIncident>MeteoriteImpact</spawnedIncident>
       </li>
       <li Class="CompProperties_Glower">

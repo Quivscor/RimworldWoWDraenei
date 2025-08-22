@@ -25,8 +25,8 @@
             <WorkToMake>10000</WorkToMake>
             <Mass>1.25</Mass>
         </statBases>
-        <soundInteract>Interact_ZeusHammer</soundInteract>
-        <meleeHitSound>MeleeHit_ZeusHammer</meleeHitSound>
+        <soundInteract>Equip_ArguniteHammer</soundInteract>
+        <meleeHitSound>Impact_ArguniteHammer</meleeHitSound>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
           <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>

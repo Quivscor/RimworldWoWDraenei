@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <SoundDef>
+        <defName>ArguniteAstralExtractor_Start</defName>
+        <context>MapOnly</context>
+        <subSounds>
+        <li>
+            <grains>
+            <li Class="AudioGrain_Clip">
+                <clipPath>ArguniteAstralExtractor_StartStop</clipPath>
+            </li>
+            </grains>
+            <volumeRange>20</volumeRange>
+            <distRange>10~30</distRange>
+            <sustainLoop>False</sustainLoop>
+        </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>ArguniteAstralExtractor_Stop</defName>
+        <context>MapOnly</context>
+        <subSounds>
+        <li>
+            <grains>
+            <li Class="AudioGrain_Clip">
+                <clipPath>ArguniteAstralExtractor_StartStop</clipPath>
+            </li>
+            </grains>
+            <volumeRange>20</volumeRange>
+            <distRange>10~30</distRange>
+            <sustainLoop>False</sustainLoop>
+        </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>ArguniteAstralExtractor_Ambience</defName>
+        <sustain>True</sustain>
+        <context>MapOnly</context>
+        <priorityMode>PrioritizeNearest</priorityMode>
+        <sustainStartSound>ArguniteAstralExtractor_Start</sustainStartSound>
+        <sustainStopSound>ArguniteAstralExtractor_Stop</sustainStopSound>
+        <subSounds>
+        <li>
+            <muteWhenPaused>True</muteWhenPaused>
+            <grains>
+            <li Class="AudioGrain_Clip">
+                <clipPath>ArguniteAstralExtractor_Loop</clipPath>
+            </li>
+            </grains>
+            <volumeRange>19</volumeRange>
+            <distRange>10~25</distRange>
+        </li>
+        </subSounds>
+    </SoundDef>
+
+</Defs>

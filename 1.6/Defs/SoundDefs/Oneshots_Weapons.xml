@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <SoundDef>
+        <defName>Equip_ArguniteHammer</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+        <li>
+            <grains>
+            <li Class="AudioGrain_Clip">
+                <clipPath>ArguniteHammer_Equip</clipPath>
+            </li>
+            </grains>
+            <volumeRange>32~32</volumeRange>
+        </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Impact_ArguniteHammer</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+        <li>
+            <grains>
+            <li Class="AudioGrain_Clip">
+                <clipPath>ArguniteHammer_Hit</clipPath>
+            </li>
+            </grains>
+            <volumeRange>32~32</volumeRange>
+        </li>
+        </subSounds>
+    </SoundDef>
+
+</Defs>
