@@ -141,7 +141,7 @@
 
   <GeneDef ParentName="GeneEyeColor">
     <defName>Quivscor_Draenei_Eyes</defName>
-    <label>draenei eyes</label>
+    <label>eredar eyes</label>
     <labelShortAdj>blue-eyed</labelShortAdj>
     <description>Carriers of this gene have glowing blue eyes.</description>
     <iconPath>UI/Icons/Genes/Gene_DraeneiEyes</iconPath> <!--edit this path-->
