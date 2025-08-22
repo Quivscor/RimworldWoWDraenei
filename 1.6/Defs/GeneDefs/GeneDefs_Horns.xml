@@ -2,7 +2,7 @@
 <Defs>
 <GeneDef ParentName="GeneHeadboneBase">
     <defName>Quivscor_Draenei_Horns_Male</defName>
-    <label>draenei crest</label>
+    <label>eredar crest</label>
     <description>Male carriers of this gene grow a crest on their forehead. This limits their possible hairstyles because of the protrusion on their forehead.</description>
     <iconPath>UI/Icons/Genes/Gene_DraeneiFacePlate</iconPath>
     <geneClass>VEF.Genes.GeneGendered</geneClass>
@@ -53,7 +53,7 @@
 
   <GeneDef ParentName="GeneHeadboneBase">
     <defName>Quivscor_Draenei_Horns_Female</defName>
-    <label>draenei horns</label>
+    <label>eredar horns</label>
     <description>Female carriers of this gene grow two goat-like horns protruding from the forehead.</description>
     <iconPath>UI/Icons/Genes/Gene_DraeneiHorns</iconPath>
     <geneClass>VEF.Genes.GeneGendered</geneClass>

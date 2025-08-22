@@ -3,8 +3,8 @@
 
 <GeneDef ParentName="GeneTailBase">
     <defName>Quivscor_Draenei_Tail</defName>
-    <label>draenei tail</label>
-    <description>Carriers of this gene grow a slender tail that can act as a dexterous fifth limb.</description>
+    <label>eredar tail</label>
+    <description>Carriers of this gene grow a slender tail.</description>
     <iconPath>UI/Icons/Genes/Gene_DraeneiTail</iconPath>
     <displayOrderInCategory>1000</displayOrderInCategory>
     <renderNodeProperties>

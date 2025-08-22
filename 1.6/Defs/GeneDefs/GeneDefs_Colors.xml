@@ -32,8 +32,8 @@
 
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>Quivscor_Skin_DraeneiAsh</defName>
-        <label>draenei ash skin</label>
-        <labelShortAdj>draenei ash</labelShortAdj>
+        <label>eredar ash skin</label>
+        <labelShortAdj>eredar ash</labelShortAdj>
         <description>Carriers of this gene produce a pigment that gives their skin a draenei ash color.</description>
         <skinColorOverride>(106, 124, 134)</skinColorOverride>
         <displayOrderInCategory>85</displayOrderInCategory>
@@ -47,8 +47,8 @@
 
     <GeneDef ParentName="GeneSkinColorOverride">
         <defName>Quivscor_Skin_DraeneiPurple</defName>
-        <label>draenei purple skin</label>
-        <labelShortAdj>draenei purple</labelShortAdj>
+        <label>eredar purple skin</label>
+        <labelShortAdj>eredar purple</labelShortAdj>
         <description>Carriers of this gene produce a pigment that gives their skin a draenei purple color.</description>
         <skinColorOverride>(76, 73, 84)</skinColorOverride>
         <displayOrderInCategory>85</displayOrderInCategory>
