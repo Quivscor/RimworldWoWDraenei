@@ -54,7 +54,7 @@
   <GeneDef ParentName="GeneHeadboneBase">
     <defName>Quivscor_Draenei_Horns_Female</defName>
     <label>eredar horns</label>
-    <description>Female carriers of this gene grow two goat-like horns protruding from the forehead.</description>
+    <description>Female carriers of this gene grow two goat-like horns protruding from their forehead.</description>
     <iconPath>UI/Icons/Genes/Gene_DraeneiHorns</iconPath>
     <geneClass>VEF.Genes.GeneGendered</geneClass>
     <modExtensions>
