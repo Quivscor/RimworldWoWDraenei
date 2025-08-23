@@ -29,8 +29,8 @@
         <meleeHitSound>Impact_ArguniteHammer</meleeHitSound>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
-          <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>
-          <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+          <PsychicSensitivityOffset MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivityOffset>
+          <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
         </equippedStatOffsets>
         <relicChance>3</relicChance>
         <smeltable>true</smeltable>
@@ -116,6 +116,8 @@
       <MoveSpeed>-0.45</MoveSpeed>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.45</VacuumResistance>
+      <PsychicSensitivityOffset MayRequire="Ludeon.RimWorld.Royalty">0.50</PsychicSensitivityOffset>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.083</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
