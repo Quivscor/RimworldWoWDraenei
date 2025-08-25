@@ -86,7 +86,7 @@
     </placeWorkers>
     <defaultPlacingRot>South</defaultPlacingRot>
     <researchPrerequisites>
-      <li>GroundPenetratingScanner</li>
+      <li>Smithing</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>
